@@ -3,8 +3,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user1 = User.create(name: params[:string1])
-    @user2 = User.create(name: params[:string2])
+    @user1 = User.create(name: params[:user_1])
+    @user2 = User.create(name: params[:user_2])
+    redirect_to sessions_create_path
   end
 
   def show
