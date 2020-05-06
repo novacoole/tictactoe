@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
   end
 
   def new
-    @session = Session.new
   end
 
   def show
