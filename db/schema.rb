@@ -24,10 +24,12 @@ ActiveRecord::Schema.define(version: 2020_05_06_045634) do
     t.boolean "cross"
     t.integer "index"
     t.integer "counter"
-    t.integer "user_id"
-    t.integer "session_id"
+    t.bigint "users_id"
+    t.bigint "sessions_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["sessions_id"], name: "index_turns_on_sessions_id"
+    t.index ["users_id"], name: "index_turns_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|

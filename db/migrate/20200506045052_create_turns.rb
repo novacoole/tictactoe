@@ -4,8 +4,8 @@ class CreateTurns < ActiveRecord::Migration[6.0]
       t.boolean :cross
       t.integer :index
       t.integer :counter
-      t.integer :user_id
-      t.integer :session_id
+      t.references :users
+      t.references :sessions
 
       t.timestamps
     end
