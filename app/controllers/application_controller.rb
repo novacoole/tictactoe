@@ -2,8 +2,8 @@ class ApplicationController < ActionController::Base
 helper_method :is_it_anything?
 
     def is_it_anything?(session_id, index)
-    @turns = Session.find(session_id).turns
-        @turns.each do |turn| 
+    turns = Session.find(session_id).turns
+        turns.each do |turn| 
             if turn.index == index
                 if turn.cross == true
                     return "X"
@@ -12,6 +12,7 @@ helper_method :is_it_anything?
                 end
             end
         end
+        return nil
     end
 
     def winning?(session_id, index)
@@ -25,8 +26,8 @@ helper_method :is_it_anything?
                     end
                 end
             end
-        end
-        
+    end
+    
     
     
 end
