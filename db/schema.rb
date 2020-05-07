@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2020_05_06_045634) do
   create_table "turns", force: :cascade do |t|
     t.boolean "cross"
     t.integer "index"
-    t.integer "counter"
     t.integer "user_id"
     t.integer "session_id"
     t.datetime "created_at", precision: 6, null: false
