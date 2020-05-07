@@ -5,19 +5,19 @@
   height: 60vh;
   width: 100vw;
   margin-top:25px;
-   background-color: cornflowerblue;
-}
 
 
-.login{
-  background-color: cornflowerblue;
+
+  .login{
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  }
   .h1{
     text-align: center;
+    text-decoration:underline;
   }
   .form{
   display:flex;
@@ -27,7 +27,9 @@
   text-align:center;
   }
   .submit{
-    padding: 100px;
+    padding: 30px;
     text-align: center;
+    margin-top:10px;
   }
+  
 }
