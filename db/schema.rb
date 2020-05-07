@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_06_045634) do
+ActiveRecord::Schema.define(version: 2020_05_07_065545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,12 +26,12 @@ ActiveRecord::Schema.define(version: 2020_05_06_045634) do
   create_table "turns", force: :cascade do |t|
     t.boolean "cross"
     t.integer "index"
-    t.bigint "users_id"
-    t.bigint "sessions_id"
+    t.bigint "user_id"
+    t.bigint "session_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["sessions_id"], name: "index_turns_on_sessions_id"
-    t.index ["users_id"], name: "index_turns_on_users_id"
+    t.index ["session_id"], name: "index_turns_on_session_id"
+    t.index ["user_id"], name: "index_turns_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :turns
   post '/sessions', to: 'sessions#create', as: 'sessions_create'
   post '/add_a_turn', to: 'sessions#add_a_turn', as: 'add_a_turn'
+  get '/draw', to: 'pages#draw', as: 'draw'
   resources :sessions, except: [:create, :index]
   resources :users
 

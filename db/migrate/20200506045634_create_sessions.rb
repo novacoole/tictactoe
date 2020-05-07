@@ -4,7 +4,6 @@ class CreateSessions < ActiveRecord::Migration[6.0]
       t.integer :counter
       t.integer :user_1
       t.integer :user_2
-
       t.timestamps
     end
   end

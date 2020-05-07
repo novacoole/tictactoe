@@ -12,25 +12,33 @@ class SessionsController < ApplicationController
       @player = @user2
       @marker = false
     end
-    @turn = Turn.new(cross: @marker, users_id: @player[:id], sessions_id: @session[:id])
+    if @counter > 9
+      redirect_to draw_path
+    end
+    @turn = Turn.new(cross: @marker, user_id: @player[:id], session_id: @session[:id])
   end
 
   def add_a_turn
     @turn = Turn.create(
       index: params[:index],
       cross: params[:cross],
-      users_id: params[:users_id],
-      sessions_id: params[:sessions_id]
+      user_id: params[:user_id],
+      session_id: params[:session_id]
     )
-    @session = Session.find(params[:sessions_id])
-    @counter = @session.counter + 1
-    @session.update(counter: @counter)
-    redirect_to @session
+    if @turn.save
+      @session = Session.find(params[:session_id])
+      @counter = @session.counter + 1
+      @session.update(counter: @counter)
+      redirect_to @session
+    else
+      render @session
+    end
+
   end
 
   private
 
   # def turn_params
-  #   params.require(:turn).permit(:index, :cross, :users_id, :sessions_id)
+  #   params.require(:turn).permit(:index, :cross, :user_id, :session_id)
   # end
 end
