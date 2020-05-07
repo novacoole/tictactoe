@@ -1,12 +1,19 @@
-
+<%= @turn.inspect %>
 <div class = "container">
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
-  <div class="box">x</div>
+  <%= link_to add_a_turn_path(
+    index: 1, 
+    cross: @turn[:cross],
+    users_id: @turn[:users_id],
+    sessions_id: @turn[:sessions_id]
+  ), method: "post", :class => "button" do %>
+    <div class="box">1</div>
+  <% end %>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
 </div>
