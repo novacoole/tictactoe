@@ -1,59 +1,14 @@
 <div class = "container">
 <% session_id = @session[:id] %>
 
+  <%= render 'shared/box', box_index: 1, session_id: session_id %>
+  <%= render 'shared/box', box_index: 2, session_id: session_id %>
+  <%= render 'shared/box', box_index: 3, session_id: session_id %>
+  <%= render 'shared/box', box_index: 4, session_id: session_id %>
+  <%= render 'shared/box', box_index: 5, session_id: session_id %>
+  <%= render 'shared/box', box_index: 6, session_id: session_id %>
+  <%= render 'shared/box', box_index: 7, session_id: session_id %>
+  <%= render 'shared/box', box_index: 8, session_id: session_id %>
+  <%= render 'shared/box', box_index: 9, session_id: session_id %>
 
-  <%= link_to add_a_turn_path( index: 1, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 1)%>
-    </div>
-  <% end %>
-
-  <%= link_to add_a_turn_path( index: 2, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 2)%>
-    </div>
-  <% end %>
-
-  <%= link_to add_a_turn_path( index: 3, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 3)%>
-    </div>
-  <% end %>
-  
-  <%= link_to add_a_turn_path( index: 4, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 4)%>
-    </div>
-  <% end %>
-  
-  <%= link_to add_a_turn_path( index: 5, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 5)%>
-    </div>
-  <% end %>
-  
-  <%= link_to add_a_turn_path( index: 6, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 6)%>
-    </div>
-  <% end %>
-  
-  <%= link_to add_a_turn_path( index: 7, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 7)%>
-    </div>
-  <% end %>
-  
-  <%= link_to add_a_turn_path( index: 8, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 8)%>
-    </div>
-  <% end %>
-
-  <%= link_to add_a_turn_path( index: 9, cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
-    <div class="box">
-      <%= is_it_anything?(session_id, 9)%>
-    </div>
-  <% end %>
-  
 </div>

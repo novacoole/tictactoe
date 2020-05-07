@@ -1,0 +1,9 @@
+  <% unless is_it_anything?(session_id, box_index) != nil %>
+    <%= link_to add_a_turn_path( index: box_index , cross: @turn[:cross], user_id: @turn[:user_id], session_id: @turn[:session_id]), method: "post", :class => "button" do %>
+      <div class="box"></div>
+    <% end %>
+  <% else %>
+    <div class="box">
+      <%= is_it_anything?(session_id, box_index)%>
+    </div>
+  <% end %>
