@@ -1,2 +1,15 @@
-<h1>Pages#homepage</h1>
-<p>Find me in app/views/pages/homepage.html.erb</p>
+
+<div class = "background">
+<div class = "login">
+<h1>Tic Tac Toe </h1>
+<%= form_with(class: "form", url: "/user/create", method: "post") do %>
+  <%= label_tag(:q, "User One", class: "label_tag") %>
+  <%= text_field_tag(:q) %>
+    <%= label_tag(:q, "User Two") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Submit", class: "submit") %>
+<% end %>
+
+</div>
+</div>
+

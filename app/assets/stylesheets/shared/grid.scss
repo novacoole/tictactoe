@@ -1,0 +1,7 @@
+.container{
+  display:grid;
+  grid-template-columns:(3,1fr);
+  grid-template-rows:(3,1fr);
+  width: 400px;
+  height:400px;
+}
