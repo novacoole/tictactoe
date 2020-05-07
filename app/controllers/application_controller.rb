@@ -33,10 +33,11 @@ helper_method :winning?
         user_2_turns = user_2.turns.collect{|turn|turn.index}.to_set
         winning_numbers.each do |arr|
             if arr.to_set.subset?(user_1_turns)
-                redirect_to user_one_wins_path
+                redirect_to wins_path(user_1)
             end
             if arr.to_set.subset?(user_2_turns)
-                redirect_to user_two_wins_path
+                puts user_2.id
+                redirect_to wins_path(user_2)
             end
         end
         return nil
