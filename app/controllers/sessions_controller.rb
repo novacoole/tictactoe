@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
       @session.update(counter: @counter)
       redirect_to @session
     else
-      render @session
+      render :flash["didnt save"] #how do this??
     end
 
   end
