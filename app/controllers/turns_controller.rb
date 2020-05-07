@@ -7,7 +7,7 @@ class TurnsController < ApplicationController
     if couter.odd?
       @user_1 = User.last - 1  
     else 
-      user_2 Turn
+      @user_2 = User.last
     end
     Turn.create(
       cross:params[:cross], 

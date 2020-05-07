@@ -5,11 +5,12 @@
   height: 60vh;
   width: 100vw;
   margin-top:25px;
+   background-color: cornflowerblue;
 }
 
 
 .login{
-  // background-color: cornflowerblue;
+  background-color: cornflowerblue;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -24,7 +25,7 @@
   justify-content: center;
   flex-direction: column;
   text-align:center;
-
+  }
   .submit{
     padding: 100px;
     text-align: center;

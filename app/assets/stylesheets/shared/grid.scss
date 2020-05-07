@@ -1,0 +1,14 @@
+.container{
+  background-color: cornflowerblue;
+  display:grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 400px;
+  height:400px;
+}
+
+.box{
+    border: 3px solid;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
