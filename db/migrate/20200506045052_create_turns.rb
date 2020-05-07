@@ -3,7 +3,6 @@ class CreateTurns < ActiveRecord::Migration[6.0]
     create_table :turns do |t|
       t.boolean :cross
       t.integer :index
-      t.integer :counter
       t.references :users
       t.references :sessions
 
