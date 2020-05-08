@@ -9,8 +9,8 @@
 .container{
   display:grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  width: 500px;
-  height:500px;
+  width: 40%;
+  height: 50%;
   }
 
 .h1{
@@ -24,12 +24,13 @@
   background-color: rgb(255, 223, 80);
   padding: 30px;
   box-shadow: 5px 5px 15px rgb(255, 223, 80), -5px -5px 15px rgb(255, 223, 80);
+  font-size: 1.5em;
 }
 
 .box{
   background-color: coral;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   font-weight: normal;
   font-size: 100px;
   display: flex;
@@ -53,7 +54,10 @@
 }
 
 .title{
-  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
   font-weight: bold;
   color: white;
 }
