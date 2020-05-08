@@ -5,7 +5,8 @@ helper_method :is_it_anything?
 helper_method :winning?
 
     def is_it_anything?(session_id, index)
-    turns = Session.find(session_id).turns
+    session = Session.find(session_id)
+    turns = session.turns
         turns.each do |turn| 
             if turn.index == index
                 if turn.cross == true
@@ -18,7 +19,7 @@ helper_method :winning?
         return nil
     end
 
-    def winning?(user_1, user_2)
+    def winning?(session, user_1, user_2)
         winning_numbers = [
             [1,2,3],
             [4,5,6],
@@ -39,6 +40,9 @@ helper_method :winning?
                 puts user_2.id
                 redirect_to wins_path(user_2)
             end
+        end
+        if session.counter == 10
+           redirect_to draw_path
         end
         return nil
     end

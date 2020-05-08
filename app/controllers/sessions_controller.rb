@@ -12,9 +12,6 @@ class SessionsController < ApplicationController
       @player = @user2
       @marker = false
     end
-    if @counter > 9
-      redirect_to draw_path
-    end
     @turn = Turn.new(cross: @marker, user_id: @player[:id], session_id: @session[:id])
   end
 
