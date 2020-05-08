@@ -1,35 +1,21 @@
-.background{
-  display:flex;
-  justify-content:center;
-  align-content:center;
-  height: 60vh;
-  width: 100vw;
-  margin-top:25px;
 
 
+  label, input{
+    display: block;
+  }
 
   .login{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  }
-  .h1{
     text-align: center;
-    text-decoration:underline;
   }
+
   .form{
-  display:flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align:center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+
   .submit{
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     margin-top:10px;
   }
-  
-}

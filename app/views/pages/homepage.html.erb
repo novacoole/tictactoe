@@ -1,14 +1,15 @@
-<div class = "background">
 
-<div class = "login">
-<h1> Tic Tac Toe </h1>
-  <%= form_with(url: "/users", method: "post", class: "form") do %>
-    <%= label_tag(:user_1, "User One", class: "label_tag") %>
-    <%= text_field_tag(:user_1) %>
-    <%= label_tag(:User_2, "User Two") %>
-    <%= text_field_tag(:user_2) %>
-    <%= submit_tag("Submit", class: "submit") %>
-  <% end %>
-</div>
+
+<div class = "wrapper">
+  <div class = "login">
+    <h1>Tic Tac Toe</h1>
+    <%= form_with(url: "/users", method: "post", class: "form") do %>
+      <%= label_tag(:user_1, "User One", class: "label_tag") %>
+      <%= text_field_tag(:user_1) %>
+      <%= label_tag(:User_2, "User Two") %>
+      <%= text_field_tag(:user_2) %>
+      <%= submit_tag("Submit", class: "submit") %>
+    <% end %>
+  </div>
 </div>
 
