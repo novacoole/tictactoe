@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user1 = User.create(name: params[:user_1])
     @user2 = User.create(name: params[:user_2])
     @session = Session.create(counter: 1, user_1: @user1[:id], user_2: @user2[:id])
-    redirect_to @session
+    redirect_to session_path(@session)
   end
 
   def show
