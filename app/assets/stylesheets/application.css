@@ -20,11 +20,12 @@
  }
 
 body {
-  height: 100vh;
+  height: calc(0.9 * 100vh);
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color:  cornflowerblue;
 }
 
@@ -33,6 +34,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 80%;
+  width: 70%;
   background-color: white;
 } 
