@@ -6,9 +6,15 @@
   <% end %>
   <div class = "winning">
     <div class = "text-holder">
-      <h1>TURN <%= @counter %></h1>
+      <div class= "player-counter">
       <h1><%= @user1.name %> Versus <%= @user2.name %></h1>
+      </div>
+      <div class ="turn-counter">
+      <h1>TURN <%= @counter %></h1>
+      </div>
+      <div class= "player-turn">
       <h1><%= @player.name %>'s Turn </h1>
+      </div>
     </div>
     <%= render partial: 'shared/grid' %>
   </div>
