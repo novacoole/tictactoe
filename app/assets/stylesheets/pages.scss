@@ -6,7 +6,30 @@
     display:block;
     justify-content: center;
     align-content:center;
+    font-size: 30px;
+    text-decoration: none;
   }
+
+  .result a {
+    text-decoration: none;
+    color: coral;   
+    font-weight: bold;
+    display: block;
+  }
+
+  .result:hover {
+    animation: result-anime 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes result-anime {
+    0% {
+    
+    }
+    100% {
+      transform: scale(1.5)
+    }
+  }
+
   .page-style{
     background-color: blue;
   }

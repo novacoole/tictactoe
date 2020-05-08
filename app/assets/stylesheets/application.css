@@ -25,14 +25,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  cornflowerblue;
+  flex-direction: column;
+  background: linear-gradient(45deg, cornflowerblue , rgb(176, 196, 235));
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   background-color: white;
 } 

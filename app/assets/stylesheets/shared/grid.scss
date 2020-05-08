@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 .container{
@@ -18,8 +18,12 @@
   text-decoration:underline;
 }
 
-.holder{
+.text-holder{
+  color: grey;
   text-align: center;
+  background-color: rgb(255, 223, 80);
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgb(255, 223, 80), -5px -5px 15px rgb(255, 223, 80);
 }
 
 .box{
@@ -34,7 +38,7 @@
   margin: 9px;
   }
 
-.box:hover{
+.hover-box:hover{
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: container-anime;
@@ -43,7 +47,13 @@
 
 @keyframes container-anime {
   100% {
-    background-color: darkorange;
+    background-color:rgb(255, 223, 80);
     box-shadow: 5px 5px 15px grey, -5px -5px 15px grey;
   }
+}
+
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
 }

@@ -1,4 +1,7 @@
 <% winning?(@session, @user1, @user2) %>
+  <div class="title">
+    <h1>Tic Tac Toe</h1>
+  </div>
 
 <div class = "wrapper">
   <% if flash[:error] %>
@@ -7,13 +10,13 @@
   <div class = "winning">
     <div class = "text-holder">
       <div class= "player-counter">
-      <h1><%= @user1.name %> Versus <%= @user2.name %></h1>
+      <h1><%= @user1.name.capitalize %> Versus <%= @user2.name.capitalize %></h1>
       </div>
       <div class ="turn-counter">
-      <h1>TURN <%= @counter %></h1>
+      <h1>Turn: <%= @counter %></h1>
       </div>
       <div class= "player-turn">
-      <h1><%= @player.name %>'s Turn </h1>
+      <h1><%= @player.name.capitalize %>'s Turn </h1>
       </div>
     </div>
     <%= render partial: 'shared/grid' %>
