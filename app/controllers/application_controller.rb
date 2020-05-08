@@ -47,6 +47,6 @@ helper_method :winning?
         return nil
     end
     
-    
+    log
     
 end
