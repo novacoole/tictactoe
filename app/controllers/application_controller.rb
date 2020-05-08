@@ -35,14 +35,17 @@ helper_method :winning?
         winning_numbers.each do |arr|
             if arr.to_set.subset?(user_1_turns)
                 redirect_to wins_path(user_1)
+                return
             end
             if arr.to_set.subset?(user_2_turns)
                 puts user_2.id
                 redirect_to wins_path(user_2)
+                return
             end
         end
         if session.counter == 10
            redirect_to draw_path
+           return
         end
         return nil
     end
