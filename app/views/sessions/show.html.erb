@@ -10,13 +10,15 @@
   <div class = "winning">
     <div class = "text-holder">
       <div class= "player-counter">
-      <h1><%= @user1.name.capitalize %> Versus <%= @user2.name.capitalize %></h1>
+      <p><%= @user1.name.capitalize %></p>
+      <p>VS</p>
+      <p><%= @user2.name.capitalize %></p>
       </div>
       <div class ="turn-counter">
-      <h1>Turn: <%= @counter %></h1>
+      <p>Turn: <%= @counter %></p>
       </div>
       <div class= "player-turn">
-      <h1><%= @player.name.capitalize %>'s Turn </h1>
+      <p><%= @player.name.capitalize %>'s Turn </p>
       </div>
     </div>
     <%= render partial: 'shared/grid' %>

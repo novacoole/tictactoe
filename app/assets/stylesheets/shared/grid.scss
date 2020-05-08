@@ -19,12 +19,14 @@
 }
 
 .text-holder{
+  min-width: 250px;
   color: grey;
   text-align: center;
   background-color: rgb(255, 223, 80);
   padding: 30px;
   box-shadow: 5px 5px 15px rgb(255, 223, 80), -5px -5px 15px rgb(255, 223, 80);
-  font-size: 1.5em;
+  font-size: 1.50em;
+  font-weight: bold;
 }
 
 .box{
