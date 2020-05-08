@@ -9,11 +9,8 @@ display:flex;
 .container{
   display:grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  width: 400px;
-  height:400px;
-    :hover{
-    background-color: bisque;
-    }
+  width: 600px;
+  height:600px;
   }
   .h1{
     text-align: center;
@@ -21,14 +18,25 @@ display:flex;
     
   }
 .box{
-  border: 3px solid black;
-  font-weight: bold;
-  font-size: 30px;
+  background-color: darkgrey;
+  height: 180px;
+  width: 180px;
+  font-weight: normal;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 9px;
   }
-.button{
-  border: 3px solid black;
-  border-top: none;
+.box:hover{
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: container-anime;
+  }
+
+@keyframes container-anime {
+  100% {
+    background-color: darkorange;
+    box-shadow: 5px 5px 15px grey, -5px -5px 15px grey;
+  }
 }

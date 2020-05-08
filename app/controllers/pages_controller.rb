@@ -6,10 +6,6 @@ class PagesController < ApplicationController
   end
 
   def wins
-    puts "************************************"
-    puts "log"
-    puts params
-    puts "************************************"
     @winner = User.find(params[:id])
   end
   
