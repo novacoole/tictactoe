@@ -18,7 +18,7 @@
   }
 
   .result:hover {
-    animation: result-anime 1.5s ease-in-out infinite alternate;
+    animation: result-anime 1s ease-in-out infinite alternate;
   }
   
   @keyframes result-anime {
@@ -26,7 +26,7 @@
     
     }
     100% {
-      transform: scale(2)
+      transform: scale(1.5)
     }
   }
 
